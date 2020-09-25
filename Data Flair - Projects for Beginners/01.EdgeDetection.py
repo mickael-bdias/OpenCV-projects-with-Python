@@ -14,3 +14,8 @@ __maintainer__ = "Mickaël Dias"
 __email__ = "industry4.0all.gmail.com"
 __status__ = "Development"
 
+path = "Images/IMG_20200911_172937.jpg"
+image = cv2.imread(path)
+
+cv2.imshow("Original", image)
+
