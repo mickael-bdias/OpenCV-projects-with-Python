@@ -6,6 +6,7 @@
 
 import cv2
 
+
 __author__ = "Mickaël Dias"
 __copyright__ = "Copyright 2020, OpenCV-projects-with-Python"
 __license__ = "MIT"
@@ -14,8 +15,10 @@ __maintainer__ = "Mickaël Dias"
 __email__ = "industry4.0all.gmail.com"
 __status__ = "Development"
 
-path = "Images/IMG_20200911_172937.jpg"
+path = "Resources/Images/lena.png"
+print(path)
 image = cv2.imread(path)
+print(image)
 
-cv2.imshow("Original", image)
 
+cv2.waitKey(0)
