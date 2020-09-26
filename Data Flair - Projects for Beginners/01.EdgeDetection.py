@@ -20,5 +20,7 @@ print(path)
 image = cv2.imread(path)
 print(image)
 
+cv2.imshow("lena", image)
+
 
 cv2.waitKey(0)
