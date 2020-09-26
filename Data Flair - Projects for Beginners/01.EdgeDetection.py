@@ -6,6 +6,8 @@
 
 import cv2
 import numpy as np
+import Auxiliary_scripts.StackImages
+
 
 __author__ = "Mickaël Dias"
 __copyright__ = "Copyright 2020, OpenCV-projects-with-Python"
@@ -52,8 +54,8 @@ cv2.imshow("Sobel Y", imageSobel_Y)
 imageLaplacian = cv2.Laplacian(src=imageBlur, ddepth=cv2.CV_8U, ksize=3)
 cv2.imshow("Laplacian", imageLaplacian)
 
-stackHorizontal = np.concatenate((imageGray, imageBlur), axis=1)
-cv2.imshow("Horizontal", stackHorizontal)
+StackedImages = Auxiliary_scripts.StackImages(0.5, ([imageBlur, imageCanny]))
+cv2.imshow("Stacked Images", StackedImages)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
