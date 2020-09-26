@@ -29,10 +29,12 @@ dim = (width, height)
 imageResized = cv2.resize(imageOriginal, dim, interpolation=cv2.INTER_AREA)
 print("Resized Dimensions: ", imageResized.shape)
 cv2.imshow("Resized", imageResized)
+print(imageResized.shape)
 
 # Gray image
 imageGray = cv2.cvtColor(imageResized, cv2.COLOR_BGR2GRAY)
 cv2.imshow("Gray", imageGray)
+print(imageGray.shape)
 
 # Blur image
 imageBlur = cv2.GaussianBlur(imageGray, (3, 3), cv2.BORDER_DEFAULT)
@@ -49,6 +51,9 @@ cv2.imshow("Sobel Y", imageSobel_Y)
 
 imageLaplacian = cv2.Laplacian(src=imageBlur, ddepth=cv2.CV_8U, ksize=3)
 cv2.imshow("Laplacian", imageLaplacian)
+
+stackHorizontal = np.concatenate((imageGray, imageBlur), axis=1)
+cv2.imshow("Horizontal", stackHorizontal)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
