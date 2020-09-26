@@ -5,6 +5,7 @@
  You can detect all the edges of different objects of the image."""
 
 import cv2
+import numpy as np
 
 __author__ = "Mickaël Dias"
 __copyright__ = "Copyright 2020, OpenCV-projects-with-Python"
@@ -28,6 +29,26 @@ dim = (width, height)
 imageResized = cv2.resize(imageOriginal, dim, interpolation=cv2.INTER_AREA)
 print("Resized Dimensions: ", imageResized.shape)
 cv2.imshow("Resized", imageResized)
+
+# Gray image
+imageGray = cv2.cvtColor(imageResized, cv2.COLOR_BGR2GRAY)
+cv2.imshow("Gray", imageGray)
+
+# Blur image
+imageBlur = cv2.GaussianBlur(imageGray, (3, 3), cv2.BORDER_DEFAULT)
+cv2.imshow("Blur", imageBlur)
+
+imageCanny = cv2.Canny(imageBlur, 150, 200, cv2.BORDER_DEFAULT)
+cv2.imshow("Canny", imageCanny)
+
+imageSobel_X = cv2.Sobel(imageBlur, cv2.CV_32F, 1, 0, ksize=3)
+cv2.imshow("Sobel X", imageSobel_X)
+
+imageSobel_Y = cv2.Sobel(imageBlur, cv2.CV_32F, 0, 1, ksize=3)
+cv2.imshow("Sobel Y", imageSobel_Y)
+
+imageLaplacian = cv2.Laplacian(src=imageBlur, ddepth=cv2.CV_8U, ksize=3)
+cv2.imshow("Laplacian", imageLaplacian)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
