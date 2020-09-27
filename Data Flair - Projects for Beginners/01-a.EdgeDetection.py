@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 
-"""01.EdgeDetection.py:
+"""01-a.EdgeDetection.py:
  The Python opencv library is mostly preferred for computer vision tasks.
  You can detect all the edges of different objects of the image.
+ Input from the user.
  Note: concat_vh function from Geeks for Geeks."""
 
+from tkinter import Tk
+from tkinter.filedialog import askopenfilename
 import cv2
 
 __author__ = "Mickaël Dias"
@@ -15,8 +18,13 @@ __maintainer__ = "Mickaël Dias"
 __email__ = "industry4.0all.gmail.com"
 __status__ = "Production"
 
-# Original image
-path = "C:/Users/Mickael/PycharmProjects/OpenCV-projects-with-Python/Resources/Images/IMG_20200911_172937.jpg"
+# Hide GUI (TKinter)
+Tk().withdraw()
+
+# Ask user for Original image
+path = askopenfilename(title="Select a file", filetypes=[("png files", "*.png"), ("jpg files", "*.jpg"),
+                                                         ("all files", "*.*")])
+print(path)
 imageOriginal = cv2.imread(path)
 print("Original Dimensions: ", imageOriginal.shape)
 
