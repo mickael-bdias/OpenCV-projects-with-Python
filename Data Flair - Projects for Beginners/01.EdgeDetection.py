@@ -10,11 +10,10 @@ import cv2
 __author__ = "Mickaël Dias"
 __copyright__ = "Copyright 2020, OpenCV-projects-with-Python"
 __license__ = "MIT"
-__version__ = "0.0.2"
+__version__ = "1.0.0"
 __maintainer__ = "Mickaël Dias"
 __email__ = "industry4.0all.gmail.com"
-__status__ = "Development"
-
+__status__ = "Production"
 
 # Original image
 path = "C:/Users/Mickael/PycharmProjects/OpenCV-projects-with-Python/Resources/Images/IMG_20200911_172937.jpg"
@@ -53,7 +52,7 @@ def concat_vh(list_2d):
 img_tile = concat_vh([[imageGray, imageBlur, imageCanny],
                       [imageSobel_X, imageSobel_Y, imageLaplacian]])
 
-cv2.imshow('concat_vh.jpg', img_tile)
+cv2.imshow('Edge Detection', img_tile)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
