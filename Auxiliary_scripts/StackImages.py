@@ -15,9 +15,10 @@ __maintainer__ = "Murtaza Hassen"
 __email__ = "contact@murtazahassan.com"
 __status__ = "Production"
 
-frameWidth = 320 # 640
+# Frame dimensions and set camara
+frameWidth = 320  # 640
 frameHeight = 240  # 480
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 cap.set(3, frameWidth)
 cap.set(4, frameHeight)
 
@@ -79,7 +80,9 @@ while True:
     imageSobel_X = cv2.Sobel(imageBlur, cv2.CV_8U, 1, 0, ksize=3)
     imageSobel_Y = cv2.Sobel(imageBlur, cv2.CV_8U, 0, 1, ksize=3)
 
+    # Blank image if needed
     imageBlank = np.zeros((200, 200), np.uint8)
+
     StackedImages = stack_images(([imageCamara, imageGray, imageBlur],
                                   [imageCanny, imageLaplacian, imageLaplacian_2]), 0.5)
     cv2.imshow("Staked Images", StackedImages)
