@@ -16,7 +16,7 @@ __email__ = "industry4.0all.gmail.com"
 __status__ = "Production"
 
 # Original image
-path = "C:/Users/Mickael/PycharmProjects/OpenCV-projects-with-Python/Resources/Images/IMG_20200911_172937.jpg"
+path = "/Resources/Images/IMG_20200911_172937.jpg"
 imageOriginal = cv2.imread(path)
 print("Original Dimensions: ", imageOriginal.shape)
 
