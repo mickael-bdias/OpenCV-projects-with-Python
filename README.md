@@ -3,7 +3,8 @@
 > Programming language: Python | Library: OpenCV
 
 Analysis and understanding of useful information from a single image or a sequence of images, it's the main propose of the project. 
-The Python OpenCV library is mostly preferred for computer vision tasks, and it will be used since the very beginneing as detect all the edges of different objects of the image.
+The Python OpenCV library is mostly preferred for computer vision tasks, and it will be used since the very beginning of detecting all the edges of different objects of the image.
+
 
 ![GitHub project status](https://img.shields.io/badge/status-Development-yellow)
 ![GitHub](https://img.shields.io/github/license/mickael-bdias/OpenCV-projects-with-Python)
@@ -17,7 +18,7 @@ The Python OpenCV library is mostly preferred for computer vision tasks, and it 
 ## About the project
 
 The Top 25 Computer Vision Project Ideas for 2020 by Data Flair are a good place to start learning Computer Vision. 
-After that, engenering and criativity will meet to create new solutions for real (or simulated) Computer Vision problems.
+After that, engineering and creativity will meet to create new solutions for real (or simulated) Computer Vision problems.
 
 ## Motivation
 
