@@ -2,7 +2,7 @@
 
 """02.PhotoSketching.py:
  Computer vision can be used to process images and perform various transformations on the image.
- The idea is to build an app that will take an image as input from the user and convert it into a pencil sketching.
+ The idea is to build an app that will take an image as OutputPictures from the user and convert it into a pencil sketching.
  Input from the user."""
 
 from tkinter import Tk

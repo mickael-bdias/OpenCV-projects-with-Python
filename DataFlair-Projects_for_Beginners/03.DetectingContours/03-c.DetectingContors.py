@@ -6,7 +6,7 @@
  For example: with a round shape, you can detect all the coins present in the image.
  The project is good to understand how to detect objects with different kinds of shapes.
  approxPolyDP() and findContours() methods.
- Camara input
+ Camara OutputPictures
  Note: for contour loop from authentise."""
 
 import cv2
