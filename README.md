@@ -24,6 +24,13 @@ After that, engineering and creativity will meet to create new solutions for rea
 Learn Computer Vision it's useful for some areas of artificial intelligence, automatic inspection, controlling processes, navigation, and so on. 
 Computer Vision it's used in several areas such as Medicine and Military.
 
+## Detailed information
+
+
+|Topic|Inputs|Outputs|Description|
+|:----:|:----:|:----:|:----:|
+| 01-a.EdgeDetection | <img src="https://github.com/mickael-bdias/OpenCV-projects-with-Python/blob/master/Resources/ImagesReadMe/img0001.png" width="600" height="150" /> |<img src="https://github.com/mickael-bdias/OpenCV-projects-with-Python/blob/master/Resources/ImagesReadMe/img0002.png" width="600" height="150"/> |  The Python opencv library is mostly preferred for computer vision task. You can detect all the edges of different objects of the image.  </br> |
+
 ## Contributors
 
 + Mickaël Brás Dias - [LinkedIn](https://www.linkedin.com/in/mickaelbdias/)
