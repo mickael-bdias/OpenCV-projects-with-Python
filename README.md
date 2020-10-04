@@ -29,7 +29,8 @@ Computer Vision it's used in several areas such as Medicine and Military.
 
 |Topic|Inputs|Outputs|Description|
 |:----:|:----:|:----:|:----:|
-| 01-a.EdgeDetection | <img src="https://github.com/mickael-bdias/OpenCV-projects-with-Python/blob/master/Resources/ImagesReadMe/img0001.png" width="600" height="150" /> |<img src="https://github.com/mickael-bdias/OpenCV-projects-with-Python/blob/master/Resources/ImagesReadMe/img0002.png" width="600" height="150"/> |  The Python opencv library is mostly preferred for computer vision task. You can detect all the edges of different objects of the image.  </br> |
+| 01-a.EdgeDetection | <img src="https://github.com/mickael-bdias/OpenCV-projects-with-Python/blob/master/Resources/ImagesReadMe/readme_img0001.jpg" width="600" height="150" /> |<img src="https://github.com/mickael-bdias/OpenCV-projects-with-Python/blob/master/Resources/ImagesReadMe/readme_img0002.jpg" width="600" height="150"/> |  The Python opencv library is mostly preferred for computer vision task. You can detect all the edges of different objects of the image.  </br> |
+| 01-b.EdgeDetection | <img src="https://github.com/mickael-bdias/OpenCV-projects-with-Python/blob/master/Resources/ImagesReadMe/readme_img0003.jpg" width="600" height="150" /> |<img src="https://github.com/mickael-bdias/OpenCV-projects-with-Python/blob/master/Resources/ImagesReadMe/readme_img0004.jpg" width="600" height="150"/> |  The Python opencv library is mostly preferred for computer vision task. You can detect all the edges of different objects of the image. **Input from the user.**  </br> |
 
 ## Contributors
 
