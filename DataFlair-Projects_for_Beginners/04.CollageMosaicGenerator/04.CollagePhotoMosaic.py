@@ -12,10 +12,10 @@
  Note: Code inspired by jayin92 in it's PhotoMosaic project.
        It was modified but most of main ideas remain"""
 
-import cv2
-import numpy as np
 import os
 import random
+import cv2
+import numpy as np
 
 __author__ = "Mickaël Dias"
 __copyright__ = "Copyright 2020, OpenCV-projects-with-Python"
